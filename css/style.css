@@ -104,6 +104,9 @@ body {
 .margin-top-medium {
   margin-top: 4rem; }
 
+.margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   border-radius: 10rem;
   display: inline-block;
@@ -322,11 +325,33 @@ body {
     float: left;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-2.5rem) skewX(13deg); }
+    transform: translateX(-2.5rem) skewX(13deg);
+    position: relative; }
   .story__img {
-    height: 100%; }
+    height: 100%;
+    transform: translateX(-14.5%) scale(1.2);
+    transition: all .3s ease-out; }
   .story__text {
     transform: skewX(13deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bolder;
+    opacity: 0;
+    transition: all .65s ease-out;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translateX(-14.5%) scale(1);
+    filter: blur(1.5px) brightness(85%); }
 
 .row {
   max-width: 114rem;
