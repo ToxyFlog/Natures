@@ -29,11 +29,16 @@
         background-color: $white;
         color:$dark-grey;
 
-        &--white::after{
+        &::after{
             background-color: $white;
         }
     }
     
+    &--green{
+        background-color: $c-primary;
+        color:$light-grey_1;
+    }
+
     &::after{
         display: inline-block;
         content: "";

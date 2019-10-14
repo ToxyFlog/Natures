@@ -128,8 +128,12 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777; }
-  .btn--white--white::after {
+  .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #f7f7f7; }
 
 .btn::after {
   display: inline-block;
@@ -285,6 +289,22 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 6rem;
+    color: #fff; }
+  .card__price-text {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 200; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.775), rgba(40, 180, 133, 0.775)), url(../img/hero.jpg);
@@ -341,5 +361,5 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 20rem 0 25rem 0;
+  padding-top: 17.5rem;
   margin-top: -11vh; }
