@@ -250,7 +250,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
   .card__price-box {
     text-align: center;
     margin-bottom: 6rem;
@@ -370,21 +371,16 @@ body {
   max-width: 114rem;
   margin: 0 auto;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
   .row:not(last-child) {
     margin-bottom: 8rem; }
   .row .col-1-2 {
     width: calc((100% - 6rem) / 2); }
-    .row .col-1-2:not(last-child) {
-      margin-right: 6rem; }
   .row .col-1-4 {
-    min-width: calc((100% - 6rem * 3) / 4); }
-    .row .col-1-4:not(last-child) {
-      margin-right: 6rem; }
+    width: calc((100% - 6rem * 3) / 4); }
   .row .col-1-3 {
     width: calc((100% - 6rem * 2) / 3); }
-    .row .col-1-3:not(last-child) {
-      margin-right: 6rem; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.775), rgba(40, 180, 133, 0.775)), url(../img/hero.jpg);
@@ -421,7 +417,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding-top: 17.5rem;
+  padding: 17.5rem 0 5rem 0;
   margin-top: -11vh; }
 
 .section-stories {
