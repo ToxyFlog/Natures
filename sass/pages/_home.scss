@@ -36,6 +36,7 @@
         to right bottom,
         $c-primary-light,
         $c-primary-dark);
+    height: 97.5vh;
 }
 
 .book{
@@ -47,4 +48,11 @@
     background-size: cover;
     border-radius: $border-basic;
     box-shadow: 0 1.5rem 4rem rgba($black, .2);
+    height: 100%;
+    width: 100%;
+
+    &__form{
+        width: 50%;
+        padding: 6rem;
+    }
 }

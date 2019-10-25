@@ -1,0 +1,99 @@
+.form{
+    &__input{
+        padding: 1.5rem 2rem;
+        font-size: $default;
+        color: inherit;
+        border-radius: 1.5px;
+        background-color: rgba($white, .6);
+        border: none;
+        font-family: inherit;
+        border-bottom: 3px solid transparent;
+        width: 82.5%;
+        display: block;
+        transition: all .3s;
+
+        &:focus{
+            border-bottom: 3px solid $c-primary;
+            box-shadow: 0 1rem 2rem rgba($black, .1);
+            outline: none;
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $c-secondary-dark;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $dark-grey_2;
+        }
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-2rem);
+    }
+
+    &__label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: .7rem;
+        margin-left: 1.85rem;
+        display: block;
+        transform: translate(0);
+        transition: all .17s;
+    }
+
+    &__group{
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__radio{
+        &-group{
+            width:49%;
+            display: inline-block;
+        }
+    
+        &-input{
+            display: none;
+        }
+    
+        &-label{
+            font-size: $default;
+            cursor: pointer;
+            position: relative;
+            padding-left:   5rem;
+        }
+    
+        &-button{
+            height: 3rem;
+            width: 3rem;
+            border: 5px solid $c-primary;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left:0;
+            top:-.33rem;
+    
+            &::after{
+                content: "";
+                display: block;
+                height: 1.25rem;
+                width: 1.25rem;
+                border-radius: 50%;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                background-color: $c-primary;
+                opacity: 0;
+                transition: all .25s ease-in-out;
+            }
+        }
+    
+        &-input:checked + &-label &-button::after{
+            opacity: 1;
+        }
+    }
+}
