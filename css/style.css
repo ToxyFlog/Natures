@@ -451,6 +451,48 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 6rem; }
+  .footer__logo {
+    width: 12.5rem;
+    height: auto; }
+  .footer__nav {
+    border-top: solid 1.5px #777;
+    display: inline-block; }
+  .footer__list {
+    list-style: none;
+    width: 35vw; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7 !important;
+    background-color: #333;
+    text-decoration: none;
+    text-transform: lowercase;
+    display: inline-block;
+    transition: all .3s;
+    font-size: 1.6rem; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.2); }
+  .footer__item {
+    display: inline-block;
+    transform: scale(1.2);
+    margin-top: 1.22rem;
+    margin-left: 1.7rem; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__copyright {
+    border-top: 1.5px solid #777;
+    padding-top: 2rem;
+    float: right;
+    width: 35vw; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
