@@ -78,14 +78,11 @@
     
             &::after{
                 content: "";
+                @include center;
                 display: block;
                 height: 1.25rem;
                 width: 1.25rem;
                 border-radius: 50%;
-                position: absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%, -50%);
                 background-color: $c-primary;
                 opacity: 0;
                 transition: all .25s ease-in-out;
