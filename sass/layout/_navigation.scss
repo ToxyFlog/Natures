@@ -86,6 +86,15 @@
         background-image: radial-gradient($c-primary-light, $c-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        
+        @include resp(tab-port){
+            top:3.4rem;
+            right:4rem;
+        }
+        @include resp(phone){
+            top:2rem;
+            right:2.5rem;
+        }
     }
 
     &__checkbox:checked ~ &__background{

@@ -8,6 +8,10 @@
     height:95vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+    @include resp(phone){
+        clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
+    }
+
     &__logo-box{
         top:4rem;
         left:4rem;
